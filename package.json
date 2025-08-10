@@ -8,9 +8,8 @@
     "build": "npx vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "start": "serve -s dist"
-  }
-  
+    "start": "serve -s dist",
+  },
   "dependencies": {
     "@react-google-maps/api": "^2.20.6",
     "axios": "^1.9.0",
