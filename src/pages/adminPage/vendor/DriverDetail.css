@@ -1,0 +1,47 @@
+.scroll-hidden {
+    overflow-x: auto;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+}
+
+.scroll-hidden::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+
+
+
+.hr_scrollbar {
+    overflow-y: scroll;
+
+}
+
+.hr_scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hr_scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+@media (max-width: 935px) {
+  .table-responsive {
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+    position: relative;
+  }
+}
+ 
+@media (min-width: 935px) {
+  .table-responsive {
+    overflow: visible !important;
+    position: relative;
+  }
+}

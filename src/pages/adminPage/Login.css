@@ -1,0 +1,103 @@
+.login-page {
+  position: relative;
+}
+
+.login-card {
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.app-title {
+  font-size: 2rem;
+  color: #212529;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  color: #212529;
+}
+
+.page-description {
+  font-size: 1rem;
+}
+
+.email-input, .password-input {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.email-input:focus, .password-input:focus {
+  border-color: #212529;
+  box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.15);
+}
+
+.submit-button {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form validation styling */
+.form-control.is-invalid {
+  background-image: none;
+  padding-right: 12px;
+}
+
+.form-control.is-valid {
+  background-image: none;
+  padding-right: 12px;
+}
+
+/* Error message styling */
+.alert-danger {
+  border-radius: 8px;
+  border-left: 4px solid #dc3545;
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+/* Remember me checkbox styling */
+.form-check-input:checked {
+  background-color: #212529;
+  border-color: #212529;
+}
+
+.form-check-input:focus {
+  border-color: #212529;
+  box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.15);
+}
+
+/* Footer styling */
+.card-footer {
+  margin-top: 1rem;
+}
+
+/* Add z-index to container to ensure it's above the background */
+.position-relative.z-1 {
+  z-index: 1;
+}
+
+/* Loading spinner style */
+.spinner-border {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-width: 0.15em;
+}
+
+form input:valid,
+form input:invalid {
+  background-image: none !important;
+  box-shadow: none !important;
+}
+

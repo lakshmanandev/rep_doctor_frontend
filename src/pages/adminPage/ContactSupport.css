@@ -1,0 +1,166 @@
+/* ContactSupport.css */
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.login-header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.hoppr-card {
+  width: 100%;
+  max-width: 450px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+}
+
+.hoppr-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.form-label {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.form-control,
+.form-select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #999;
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+textarea.form-control {
+  min-height: 100px;
+}
+
+.fixed-textarea-container {
+  position: relative;
+  height: 100px;
+  /* Adjust height as needed */
+  margin-bottom: 10px;
+}
+
+.fixed-textarea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: none;
+  overflow-y: auto;
+}
+
+.fixed-textarea:focus {
+  border-color: #999;
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.back-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Ensure button has the same style as in the original design */
+.btn-dark {
+  background-color: #000;
+  border-color: #000;
+}
+
+.btn-dark:hover {
+  background-color: #333;
+  border-color: #333;
+}
+
+/* Make form validation more subtle */
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  border-color: #dc3545;
+  background-image: none;
+}
+
+.was-validated .form-control:valid,
+.form-control.is-valid {
+  border-color: #28a745;
+  background-image: none;
+}
+
+form select:valid,
+form select:invalid {
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+.submit-button {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

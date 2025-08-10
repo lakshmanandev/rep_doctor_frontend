@@ -1,0 +1,331 @@
+ /* App.css - Global styles */
+
+ html,
+ body,
+ #root {
+     /* height: 100%; */
+     border-right: 1px solid rgba(0, 0, 0, 0.10);
+     /* font-family: "Poppins", sans-serif; */
+     /* background: #FAFAFA; */
+ }
+ .dashboard{
+     background: #f9fafb;
+ }
+
+ #root {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .sidebar {
+     width: 280px;
+     min-height: 100vh;
+     overflow-y: auto;
+     padding: 1.5rem;
+ }
+
+ .progress {
+     height: 0.5rem;
+ }
+
+ .dropdown-toggle::after {
+     display: none;
+ }
+
+
+
+ .txt-success {
+     color: rgb(62, 204, 114);
+ }
+
+ .txt-danger {
+     color: rgb(239, 68, 68);
+ }
+
+
+
+ /* progressbar  */
+
+ .progress-cancel .progress-bar {
+     background-color: #EF4444;
+     /* Bootstrap danger color or any custom */
+ }
+
+ .progress-normal .progress-bar {
+     background-color: #4f46e5;
+     /* Lavender or custom primary */
+ }
+
+
+
+ /* login page  */
+
+
+
+ /* Responsive styles for the forgot password page */
+ .forgot-password-card {
+     transition: all 0.3s ease;
+ }
+
+ .forgot-password-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+  }
+
+ /* Default styles - will apply to all screen sizes */
+ .app-title {
+     font-size: 1.75rem;
+ }
+
+ .page-title {
+     font-size: 1.5rem;
+ }
+
+ .page-description {
+     font-size: 1rem;
+ }
+
+ .email-input {
+     height: 50px;
+ }
+
+ .submit-button {
+     font-weight: 500;
+     transition: background-color 0.3s ease;
+ }
+
+ .submit-button:hover {
+     background-color: #333 !important;
+ }
+
+ .footer-link:hover {
+     text-decoration: underline !important;
+ }
+
+ /* OTP Input field styling */
+ .verification-code-container {
+     display: flex;
+     justify-content: space-between;
+     gap: 8px;
+     margin-bottom: 1.5rem;
+ }
+
+ .verification-code-input {
+     width: 60px;
+     height: 60px;
+     text-align: center;
+     font-size: 24px;
+     border-radius: 8px;
+     border: 1px solid #ced4da;
+     background-color: #f8f9fa;
+     transition: all 0.2s ease;
+ }
+
+ .verification-code-input:focus {
+     border-color: #212529;
+     box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.15);
+     background-color: #fff;
+ }
+
+ /* Input placeholder styling */
+ .verification-code-input::placeholder {
+     color: #adb5bd;
+     font-size: 14px;
+ }
+
+ /* Timer and resend link styling */
+ .timer-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 1.5rem;
+ }
+
+ .timer {
+     color: #6c757d;
+     font-weight: 500;
+ }
+
+ .resend-button {
+     background: none;
+     border: none;
+     color: #212529;
+     font-weight: 600;
+     text-decoration: none;
+     padding: 0;
+     cursor: pointer;
+ }
+
+ .resend-button:hover {
+     text-decoration: underline;
+ }
+
+ .resend-button:disabled {
+     color: #adb5bd;
+     cursor: not-allowed;
+     text-decoration: none;
+ }
+
+ /* Animations for successful input */
+ .verification-code-input.valid {
+     border-color: #198754;
+     background-color: rgba(25, 135, 84, 0.05);
+ }
+
+ /* Focus indicator style */
+ .verification-code-input.active {
+     border-color: #212529;
+     box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.15);
+ }
+
+ /* Accessibility improvements */
+ .verification-code-input:focus-visible {
+     outline: none;
+     border-color: #0d6efd;
+     box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+ }
+
+/* driver page */
+ .u_primary {
+    color: #3b82f4;
+    border-bottom: #0d6efd solid 1px;
+  }
+   
+  .u_light {
+    border-bottom: none;
+  }
+   
+  .bton:hover {
+      cursor: pointer;
+  }
+ @media (max-width: 1440px) {
+
+     /* For tablets */
+     .verification-code-input {
+         width: 50px;
+         height: 50px;
+         font-size: 20px;
+     }
+ }
+
+ @media (max-width: 575px) {
+
+     /* For small tablets */
+     .verification-code-container {
+         gap: 6px;
+     }
+
+     .verification-code-input {
+         width: 45px;
+         height: 45px;
+         font-size: 18px;
+     }
+ }
+
+ @media (max-width: 399px) {
+
+     /* For mobile phones */
+     .verification-code-container {
+         gap: 4px;
+     }
+
+     .verification-code-input {
+         width: 40px;
+         height: 40px;
+         font-size: 16px;
+     }
+ }
+
+ @media (max-width: 350px) {
+
+     /* For very small mobile phones */
+     .verification-code-container {
+         gap: 3px;
+     }
+
+     .verification-code-input {
+         width: 35px;
+         height: 35px;
+         font-size: 14px;
+     }
+ }
+
+ /* Media queries for tablet responsiveness */
+ @media (max-width: 767px) {
+     .forgot-password-card {
+         padding: 1rem !important;
+     }
+
+     .card-body-container {
+         padding: 1rem !important;
+     }
+ }
+
+ /* Specific styles for mobile devices under 400px */
+ @media (max-width: 399px) {
+     .forgot-password-card {
+         padding: 0.75rem !important;
+     }
+
+     .card-body-container {
+         padding: 0.75rem !important;
+     }
+
+     .app-title {
+         font-size: 1.5rem;
+         margin-bottom: 0.5rem !important;
+     }
+
+     .back-button {
+         padding-top: 0.5rem !important;
+         margin-bottom: 0.75rem !important;
+     }
+
+     .header-container {
+         padding-bottom: 0.5rem !important;
+     }
+
+     .page-title {
+         font-size: 1.25rem;
+         padding-top: 0.5rem !important;
+     }
+
+     .page-description {
+         font-size: 0.875rem;
+     }
+
+     .forgot-password-form .py-4 {
+         padding-top: 0.75rem !important;
+         padding-bottom: 0.75rem !important;
+         margin-top: 0.5rem !important;
+         margin-bottom: 0.5rem !important;
+     }
+
+     .email-input {
+         height: 42px;
+         font-size: 0.875rem;
+         padding: 0.5rem 0.5rem 0.5rem 0.5rem !important;
+     }
+
+     .submit-button {
+         height: 42px;
+         font-size: 0.875rem;
+         padding: 0.375rem 0.5rem !important;
+         margin-top: 0.5rem !important;
+         margin-bottom: 0.5rem !important;
+     }
+
+     .support-container {
+         margin-top: 0.5rem;
+         font-size: 0.875rem;
+     }
+
+     .card-footer {
+         padding-top: 1rem !important;
+         padding-bottom: 0.5rem !important;
+     }
+
+     .footer-text {
+         font-size: 0.75rem;
+     }
+ }

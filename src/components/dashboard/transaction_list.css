@@ -1,0 +1,21 @@
+.custom-table-row {
+    border-top: 2rem solid transparent; /* creates vertical spacing */
+  }
+   
+  .customer-table-row {
+    border-top: 2rem solid transparent;
+    color: var(--gray-500, #71717a);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+   
+  .pending_text {
+    color: var(--yellow-900, #713f12);
+  }
+   
+  .alcus {
+    font-weight: 700;
+    color: var(--Color-1, #151518);
+    opacity: 0.5;
+  }
