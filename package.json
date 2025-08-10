@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npx vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "start": "serve -s dist",
+    "start": "serve -s dist"
   },
   "dependencies": {
     "@react-google-maps/api": "^2.20.6",
