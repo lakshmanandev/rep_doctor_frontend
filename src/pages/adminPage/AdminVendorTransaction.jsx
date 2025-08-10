@@ -6,7 +6,6 @@ import DataTable from 'react-data-table-component';
 import { Badge, Dropdown, Card, Nav, Button } from 'react-bootstrap';
 import { FiMoreHorizontal } from 'react-icons/fi';
 import { Eye } from 'react-feather';
-import VendorTransactionFilterBar from "../vendorPage/VendorTransactionFilterBar";
 import { useNavigate } from "react-router-dom";
 import { FaDownload } from "react-icons/fa";
 import { toastAlert } from "../../utils/toast";
@@ -165,12 +164,7 @@ const AdminVendorTransaction = ({
                         </Nav.Item>
                     </Nav>
 
-                    <VendorTransactionFilterBar
-                        adminsidevendordetail={adminsidevendordetail}
-                        dashboard={isDashboard}
-                        detailpage={isDetailpage}
-                        onFilterChange={() => handleFilterChange}
-                    />
+                  
 
                     <div style={{ overflowX: 'auto' }}>
                         <DataTable
